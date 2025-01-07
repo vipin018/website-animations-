@@ -14,7 +14,7 @@ body {
     height: 100%;
     width: 100%;
     color: #a19b9b;
-cursor: pointer;
+    cursor: pointer;
 }
 
 p {
@@ -24,16 +24,25 @@ p {
     font-weight: 600;
 }
 
-.line{
+.line {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
     /* gap: 1rem; */
 }
-#text{
+
+#text {
     width: 100vh;
 }
 
-#text:has(.fancy:hover) .word:not(.fancy:hover){
-opacity: 0.2;
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.2;
 }
+
+.fancy>.letter:nth-child(1) {}
+
+.fancy>.letter:nth-child(2) {}
+
+.fancy>.letter:nth-child(3) {}
+
+.fancy>.letter:nth-child(4) {}
