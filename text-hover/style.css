@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html,
@@ -31,18 +31,83 @@ p {
     /* gap: 1rem; */
 }
 
+a {
+    text-decoration: none;
+    font-size: 7vw;
+    /* margin-left:15rem; */
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #a19b9b;
+}
+
 #text {
     width: 47.5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
     opacity: 0.2;
 }
 
-.fancy>.letter:nth-child(1) {}
+.fancy>.letter {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
 
-.fancy>.letter:nth-child(2) {}
+.fancy:hover>.letter:nth-child(1) {
+    transform: translate(-80%, 40%) rotate(10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
 
-.fancy>.letter:nth-child(3) {}
+}
 
-.fancy>.letter:nth-child(4) {}
+.fancy:hover>.letter:nth-child(2) {
+    transform: translate(-80%, -10%) rotate(-10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.fancy:hover>.letter:nth-child(3) {
+    transform: translate(-080%, 40%) rotate(-10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.fancy:hover>.letter:nth-child(4) {
+    transform: translate(-80%, -20%) rotate(20deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.fancy:hover>.letter:nth-child(5) {
+    transform: translate(-80%, 40%) rotate(20deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.fancy:hover>.letter:nth-child(6) {
+    transform: translate(-20%, -20%) rotate(-20deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.fancy:hover>.letter:nth-child(7) {
+    transform: translate(40%, -30%) rotate(-10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.fancy:hover>.letter:nth-child(8) {
+    transform: translate(100%, -20%) rotate(10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.fancy:hover>.letter:nth-child(9) {
+    transform: translate(100%, 50%) rotate(10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #000000;
+}
