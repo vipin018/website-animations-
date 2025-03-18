@@ -17,7 +17,9 @@ imageDiv.addEventListener("mouseenter", function () {
     
     gsap.to(cursor, {
         scale: 5,
-        opacity: 1,
+        backgroundColor: "transparent",
+        duration: 0.5,
+        ease: "power2.out",
     });
 }); 
 
@@ -27,5 +29,6 @@ imageDiv.addEventListener("mouseleave", function () {
     cursor.style.color = "#ffffff";
     gsap.to(cursor, {
         scale: 1,
+        backgroundColor: "#ffffff",
     });
 });
