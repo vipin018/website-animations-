@@ -1,0 +1,51 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html,
+body {
+height: 100%;
+width: 100%;
+}
+body{
+background-color: #000000;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#main h1{
+    font-size: 7vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: yellow;
+    color: black;
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 span{
+    display: inline-block;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: #fbb8b8;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #caff80;
+}
+
+
