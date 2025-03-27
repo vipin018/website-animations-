@@ -22,7 +22,8 @@ body {
 main {
     height: 100%;
     width: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -50,8 +51,9 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .hero {
@@ -61,7 +63,7 @@ nav {
 .hero h1 {
     font-size: 150px;
     font-weight: 600;
-    font-family: Gilroy;
+    /* font-family: "Helvetica "; */
     line-height: 150px;
     width: 80%;
     margin-left: 10%;
@@ -119,6 +121,7 @@ nav {
 
 .img7 {
     rotate: 0deg;
+    z-index: 2;
 }
 
 

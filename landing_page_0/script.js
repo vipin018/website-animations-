@@ -63,20 +63,20 @@ links.forEach(link => {
     });
 });
 
-let flag = false;
-body.addEventListener("click", () => {
-    if(flag){
-        body.style.backgroundColor = "white";
-        body.style.color = "black";
-        links.forEach(link => {
-            link.style.color = "black";
-        });
-    }else{
-        body.style.backgroundColor = "black";
-        body.style.color = "white";
-        links.forEach(link => {
-            link.style.color = "white";
-        });
-    }
-    flag = !flag;
-});
+// let flag = false;
+// body.addEventListener("click", () => {
+//     if(flag){
+//         body.style.backgroundColor = "white";
+//         body.style.color = "black";
+//         links.forEach(link => {
+//             link.style.color = "black";
+//         });
+//     }else{
+//         body.style.backgroundColor = "black";
+//         body.style.color = "white";
+//         links.forEach(link => {
+//             link.style.color = "white";
+//         });
+//     }
+//     flag = !flag;
+// });
