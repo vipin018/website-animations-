@@ -47,36 +47,34 @@ const animation = () => {
 
 let links = document.querySelectorAll(".nav-links a");
 let body = document.querySelector("main");
-links.forEach(link => {
-    link.addEventListener("mouseenter", () => {
-        link.style.fontWeight = "bold";
-       link.style.rotate = (Math.random() * 10 ) + 'deg';
-        link.style.scale = "1.1";
-        link.style.transition = "all 0.3s ease";
+const letter = new SplitType('.nav-links a', { types: 'chars' });
+  
+// Minimal and modern hover effect
+letter.chars.forEach((char) => {
+  char.addEventListener('mouseenter', () => {
+    gsap.to(char, {
+      scale: 1.2,
+      y: -5,
+      fontWeight: 'bold',
+      color: '#000',
+      duration: 0.3,
+      ease: 'power2.out',
+      rotate: Math.random() * 10,
+    });
+  });
 
+  char.addEventListener('mouseleave', () => {
+    gsap.to(char, {
+      scale: 1,
+      y: 0,
+      color: '#000',
+      duration: 0.3,
+      ease: 'power2.out',
+      fontWeight: 'normal',
+      rotate: 0,
     });
-    link.addEventListener("mouseleave", () => {
-        link.style.fontWeight = "normal";
-        link.style.rotate = "0deg";
-        link.style.scale = "1";
-        link.style.transition = "all 0.3s ease";
-    });
+  });
 });
 
-// let flag = false;
-// body.addEventListener("click", () => {
-//     if(flag){
-//         body.style.backgroundColor = "white";
-//         body.style.color = "black";
-//         links.forEach(link => {
-//             link.style.color = "black";
-//         });
-//     }else{
-//         body.style.backgroundColor = "black";
-//         body.style.color = "white";
-//         links.forEach(link => {
-//             link.style.color = "white";
-//         });
-//     }
-//     flag = !flag;
-// });
+
+

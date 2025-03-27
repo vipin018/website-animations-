@@ -11,6 +11,11 @@ body {
     width: 100%;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Regular.ttf');
+}
+
 body {
     background-color: #222;
     color: #fff;
@@ -22,7 +27,7 @@ body {
 main {
     height: 100%;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fffff1;
     color: #000000;
     text-transform: uppercase;
 }
@@ -45,7 +50,7 @@ nav {
     display: flex;
     gap: 20px;
     opacity: 0.8;
-
+    /* background-color: #c00000; */
     padding: 14px 20px;
 }
 
@@ -54,6 +59,9 @@ nav {
     color: #000000;
     font-size: 20px;
     font-weight: 500;
+    /* background-color: #ffffff; */
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .hero {
