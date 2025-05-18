@@ -13,8 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  
 }
 
 p{
@@ -23,13 +21,9 @@ p{
   cursor: pointer;
 }
 
-
-
-
 @media screen and (max-width: 600px) {
   p{
     font-size: 1.9rem;
   }
-
 }
 
